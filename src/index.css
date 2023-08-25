@@ -1,0 +1,19 @@
+:root {
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  min-width: 280px;
+  min-height: 100vh;
+}

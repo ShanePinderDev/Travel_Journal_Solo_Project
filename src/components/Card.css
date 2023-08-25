@@ -1,0 +1,94 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 35px 40px 0;
+}
+
+.card--image {
+  min-width: 125px;
+  object-fit: cover;
+}
+
+.card--stats {
+  padding: 20px 0;
+}
+
+.card--stats-location {
+  display: flex;
+  align-items: center;
+}
+
+.card--pin {
+  width: 12px;
+  margin-right: 5px;
+}
+
+.card--location,
+.card--title,
+.card--dates,
+.card--description {
+  color: #2b283a;
+}
+
+.card--location {
+  font-size: calc(15px + 0.390625vw);
+  line-height: 12.4px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin-right: 15px;
+}
+
+.card--googlemaps {
+  color: #918e9b;
+  font-size: calc(12px + 0.390625vw);
+  line-height: 12.4px;
+}
+
+.card--title {
+  font-size: calc(25px + 0.390625vw);
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.card--dates {
+  font-size: calc(14px + 0.390625vw);
+  font-weight: 700;
+  line-height: 12px;
+}
+
+.card--description {
+  font-size: calc(15px + 0.390625vw);
+  line-height: 30px;
+  margin-bottom: 0;
+}
+
+@media (min-width: 780px) {
+  .card {
+    flex-direction: row;
+    justify-content: center;
+    padding: 40px;
+  }
+
+  .card--stats {
+    padding: 0 40px 10px;
+    max-width: 50%;
+    border-bottom: 1px solid grey;
+  }
+
+  .card--image {
+    max-width: 400px;
+    min-width: 400px;
+    border-bottom: 1px solid grey;
+    padding-bottom: 40px;
+  }
+
+  .card--description {
+    margin-bottom: 18.078px;
+  }
+}
+
+@media only screen and (max-width: 865px) and (min-width: 781px) {
+  .card--googlemaps {
+    font-size: calc(10px + 0.390625vw);
+  }
+}
